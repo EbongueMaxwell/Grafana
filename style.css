@@ -51,6 +51,12 @@ body {
         a:hover {
             text-decoration: underline;
         }
+img{
+            width:100%;
+            height:auto;
+            max-width:100%;
+            object-fit:cover;
+}
 h3{
   font-family: Calibri; 
   font-size: 25pt;         
