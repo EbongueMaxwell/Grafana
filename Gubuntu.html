@@ -7,54 +7,54 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <header> Setup Grafana on Ubuntu OS </header>
+  <header> <h1>Setup Grafana on Ubuntu OS</h1></header>
   <div class="container">
     <h2>We install on Ubuntu22 </h2>
     <p>Lets Start by </p> <br>
     <ol>
-      <li>
+      <li><h2>Update the machine</h2>
         <p> We open the terminal and type<br>
         <i>sudo apt update && sudo apt upgrade -y</i><br> to refresh our Update the package list to ensure you have the latest version of all packages</p>
         <img src="./update.png" alt="update system">
       </li>
-      <li>
+      <li><h2>Install Grafana's Dependencies</h2>
         <p>To install all the Dependencies for grafana we type on the terminal<br>
         <i>sudo apt install -y apt-transport-https software-properties-common</i></p>
         <img src="./dependencies.png" alt="install dependencies">
       </li>
-      <li>
+      <li><h2>Add APT Grafana Repository</h2>
         <p>We type the command to Add the Grafana APT repository and import its GPG key.<br>
         <i>wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
-echo "deb https://packages.grafana.com/oss/deb stable main" | sudo tee /etc/apt/sources.list.d/grafana.list
-</i></p>
+            echo "deb https://packages.grafana.com/oss/deb stable main" | sudo tee /etc/apt/sources.list.d/grafana.list
+        </i></p>
         <img src="./setGrafanaRepository.png" alt="Install all Grafana repository">
         </li>
-      <li>
+      <li><h2>Install Grafana</h2>
         <p>Update the package list again and install Grafana.<br>
         <i>sudo apt update
           sudo apt install grafana -y </i></p>
         <img src="Intallation." alt="">
       </li>
-      <li>
+      <li><h2>Enable Grafana</h2>
         <p>Start the Grafana service and enable it to start on boot.<br>
         <i>sudo systemctl start grafana-server
           sudo systemctl enable grafana-server</i></p>
         <img src="./InstallGrafana.png" alt=" install on ubuntu">
       </li>
-      <li>
+      <li><h2>Verify the Installation</h2>
         <p>Check the Grafana service status to ensure it is running:<br>
         <i>sudo systemctl status grafana-server</i></p>
         <img src="./VerifyInstall.png" alt="check the installation">
       </li>
-      <li>
-        <p>Open your web browser and navigate to <i>http://<your-server-ip>:3000.</i><br>
+      <li> <h2>Launch the Grafana on Browser</h2>
+        <p>Open your web browser and navigate to <i>http://your server ip:3000.</i><br>
             Log in with the default credentials:<br>
             Username:<i> admin</i><br>
             Password: <i>admin (you'll be prompted to change it after the first login).</i></p>
           <img src="./Welcome G.png" alt="Login on Grafana">
       </li>
     </ol>
-
+        <h2>Grafana Home Display</h2>
       <p>Here comes the home page of Grafana</p>
       <img src="./GrafanaHome.png" alt="Grafana Home page view">
          <h2>Conclusion</h2>
