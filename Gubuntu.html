@@ -15,19 +15,19 @@
       <li>
         <p> We open the terminal and type<br>
         <i>sudo apt update && sudo apt upgrade -y</i><br> to refresh our Update the package list to ensure you have the latest version of all packages</p>
-        <img src="" alt="">
+        <img src="./update.png" alt="update system">
       </li>
       <li>
         <p>To install all the Dependencies for grafana we type on the terminal<br>
         <i>sudo apt install -y apt-transport-https software-properties-common</i></p>
-        <img src="" alt="">
+        <img src="./dependencies.png" alt="install dependencies">
       </li>
       <li>
         <p>We type the command to Add the Grafana APT repository and import its GPG key.<br>
         <i>wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
 echo "deb https://packages.grafana.com/oss/deb stable main" | sudo tee /etc/apt/sources.list.d/grafana.list
 </i></p>
-        <img src="" alt="">
+        <img src="./setGrafanaRepository.png" alt="Install all Grafana repository">
         </li>
       <li>
         <p>Update the package list again and install Grafana.<br>
@@ -54,7 +54,9 @@ echo "deb https://packages.grafana.com/oss/deb stable main" | sudo tee /etc/apt/
           <img src="" alt="">
       </li>
     </ol>
-
+         <h2>Conclusion</h2>
+                <p>That's it! You now have a basic Grafana setup. You can further customize your dashboards and explore more advanced features as you become familiar with the platform. For detailed documentation, visit the Grafana Documentation.</p>
+            
   </div>
 </body>
 </html>
