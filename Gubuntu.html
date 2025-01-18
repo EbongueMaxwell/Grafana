@@ -1,3 +1,56 @@
-<html>
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafana Description</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header> Setup Grafana on Ubuntu OS </header>
+  <div class="container">
+    <h2>We install on Ubuntu22 </h2>
+    <p>Lets Start by </p> <br>
+    <ol>
+      <li>
+        <p> We open the terminal and type<br>
+        <i>sudo apt update && sudo apt upgrade -y</i><br> to refresh our Update the package list to ensure you have the latest version of all packages</p>
+        <img src="" alt="">
+      </li>
+      <li>
+        <p>To install all the Dependencies for grafana we type on the terminal<br>
+        <i>sudo apt install -y apt-transport-https software-properties-common</i></p>
+        <img src="" alt="">
+      </li>
+      <li>
+        <p>We type the command to Add the Grafana APT repository and import its GPG key.<br>
+        <i>wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
+echo "deb https://packages.grafana.com/oss/deb stable main" | sudo tee /etc/apt/sources.list.d/grafana.list
+</i></p>
+        <img src="" alt="">
+        </li>
+      <li>
+        <p>Update the package list again and install Grafana.<br>
+        <i>sudo apt update
+          sudo apt install grafana -y </i></p>
+        <img src="" alt="">
+      </li>
+      <li>
+        <p>Start the Grafana service and enable it to start on boot.<br>
+        <i>sudo systemctl start grafana-server
+          sudo systemctl enable grafana-server</i></p>
+        <img src="" alt="">
+      </li>
+      <li>
+        <p>Check the Grafana service status to ensure it is running:<br>
+        <i>sudo systemctl status grafana-server</i></p>
+        <img src="" alt="">
+      </li>
+      <li>
+        <p></p>
+      </li>
+    </ol>
+
+  </div>
+</body>
 </html>
